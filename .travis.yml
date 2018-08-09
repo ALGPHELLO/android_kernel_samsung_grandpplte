@@ -31,7 +31,7 @@ script:
 
 after_success:
   - cd $KERNEL_DIR
-  - curl --upload-file arch/arm/boot/zImage.gz https://transfer.sh/mt6737t-grandpplte-zImage
+  - curl --upload-file arch/arm/boot/zImage https://transfer.sh/mt6737t-grandpplte-zImage
 
 deploy:
   skip_cleanup: true
