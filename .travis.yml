@@ -30,7 +30,7 @@ script:
   - ZIMAGE=$KERNEL_DIR/arch/arm/boot/*zImage*
 
 after_success:
-  - cd $KERNEL_DIR/out
+  - cd $KERNEL_DIR
   - curl --upload-file arch/arm/boot/zImage.gz https://transfer.sh/mt6737t-grandpplte-zImage
 
 deploy:
