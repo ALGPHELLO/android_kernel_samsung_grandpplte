@@ -42,7 +42,7 @@ deploy:
   on:
     tags: false
     repo: ALGPHELLO/android_kernel_samsung_grandpplte
-    branch: master
+    branch: custom
 
 branches:
   except:
