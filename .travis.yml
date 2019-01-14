@@ -46,4 +46,4 @@ deploy:
 
 branches:
   except:
-    - /^(?i:untagged)-.*$/
+    - /^(?i:release_kernel)-.*$/
