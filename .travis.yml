@@ -41,7 +41,7 @@ deploy:
   file: "$KERNEL_DIR/arch/arm/boot/compressed/*vmlinux*"
   on:
     tags: false
-    repo: ALGPHELLO/android_kernel_samsung_grandpplte
+    repo: algphello/android_kernel_samsung_grandpplte
     branch: master
 
 branches:
