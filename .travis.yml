@@ -20,7 +20,8 @@ before_install:
 install: true
 
 script:
-  - export CROSS_COMPILE=~/toolchain/bin/arm-linux-androideabi-
+  #- export CROSS_COMPILE=~/toolchain/bin/arm-linux-androideabi-
+  - export CROSS_COMPILE=~/toolchain/bin/arm-eabi-
   - export ARCH=arm
   - export KBUILD_BUILD_USER="ALGPHELLO"
   - export KBUILD_BUILD_HOST="fujitsu"
