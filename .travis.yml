@@ -13,7 +13,8 @@ addons:
     - true
 
 before_install:
-  - git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9 ~/toolchain/
+  #- git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9 ~/toolchain/
+  - git clone git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8 ~/toolchain/
   - sudo chmod -R a+x ~/toolchain/*
 
 install: true
@@ -25,7 +26,7 @@ script:
   - export KBUILD_BUILD_HOST="fujitsu"
   - export ARCH_MTK_PLATFORM=mt6735
   #- make mt6737t-grandpplte_defconfig
-  - MAKE mt6737t-grandpplteser-lineageos_defconfig
+  - make mt6737t-grandpplteser-lineageos_defconfig
   - make -j32
   - KERNEL_DIR=$PWD
   - ZIMAGE=$KERNEL_DIR/arch/arm/boot/*Image*
