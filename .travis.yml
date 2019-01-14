@@ -14,7 +14,7 @@ addons:
 
 before_install:
   #- git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9 ~/toolchain/
-  - git clone git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8 ~/toolchain/
+  - git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8 ~/toolchain/
   - sudo chmod -R a+x ~/toolchain/*
 
 install: true
