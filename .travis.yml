@@ -40,7 +40,8 @@ deploy:
   provider: releases
   api_key: "$GitOAUTHToken"
   file_glob: true
-  file: $KERNEL_DIR/arch/arm/boot/*zImage*
+  file: $KERNEL_DIR/arch/arm/boot/*Image*
+  file: $KERNEL_DIR/arch/arm/boot/compressed/*vmlinux*
   on:
     tags: false
     repo: ALGPHELLO/android_kernel_samsung_grandpplte
