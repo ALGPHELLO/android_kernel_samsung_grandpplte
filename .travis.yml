@@ -24,10 +24,11 @@ script:
   - export KBUILD_BUILD_USER="ALGPHELLO"
   - export KBUILD_BUILD_HOST="fujitsu"
   - export ARCH_MTK_PLATFORM=mt6735
-  - make mt6737t-grandpplte_defconfig
+  #- make mt6737t-grandpplte_defconfig
+  - MAKE mt6737t-grandpplteser-lineageos_defconfig
   - make -j32
   - KERNEL_DIR=$PWD
-  - ZIMAGE=$KERNEL_DIR/arch/arm/boot/*zImage*
+  - ZIMAGE=$KERNEL_DIR/arch/arm/boot/*Image*
 
 after_success:
   - cd $KERNEL_DIR
