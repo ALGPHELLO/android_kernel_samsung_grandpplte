@@ -30,14 +30,14 @@ script:
   - make mt6737t-grandpplteser-lineageos_defconfig
   - make -j32
   - KERNEL_DIR=$PWD
-  - ZIMAGE=$KERNEL_DIR/arch/arm/boot/*zImage*
+  - ZIMAGE=$KERNEL_DIR/arch/arm/boot/*Image*
 
 deploy:
   skip_cleanup: true
   provider: releases
   api_key: "$GitOAUTHToken_KERNEL"
   file_glob: true
-  file: $KERNEL_DIR/arch/arm/boot/*zImage*
+  file: $KERNEL_DIR/arch/arm/boot/*Image*
   file: $KERNEL_DIR/*vmlinux*
   on:
     tags: false
