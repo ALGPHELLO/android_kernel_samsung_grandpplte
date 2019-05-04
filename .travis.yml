@@ -35,7 +35,7 @@ script:
 deploy:
   skip_cleanup: true
   provider: releases
-  api_key: "$GitOAUTHToken"
+  api_key: "$GitOAUTHToken_KERNEL"
   file_glob: true
   file: $KERNEL_DIR/arch/arm/boot/*zImage*
   file: $KERNEL_DIR/*vmlinux*
